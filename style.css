@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0a0a0a;
+  z-index: 0;
+  background-size: cover;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a0a0a;
+  color: #fff;
+}
+.left, .right {
+  font-size: 1.8em;
+  cursor: pointer;
+}
+.imgb {
+  position: fixed;
+  top: 50px;
+  width: 100vw;
+  height: 800px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  gap: 10px;
+  overflow-y: auto;
+  padding: 10px;
+  
+}
+h3 {
+  color: #fff;
+  font-size: 1.8em;
+  margin: 10px 20px;
+}
+.imgb div {
+  width: 90%;
+  padding: 15px 25px;
+  background: #1a1515;
+  color: #fff;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+.slider1 {
+  position: fixed;
+  top: 50px;
+  left: -50%;
+  padding: 10px;
+  width: 50%;
+  height: 800px;
+  background: #1a1515;
+  overflow: hidden;
+  transition: left 0.5s ease;
+  z-index: 9999;
+}
+.slider1.active {
+  position: fixed;
+  left: 0;
+}
+.slider1 h3 {
+  font-size: 1.8em;
+  color: #fff;
+}
+.slider1 div, .slider2 div {
+  padding: 15px;
+  margin: 10px 0;
+  width: 100%;
+  background: #0a0a0a;
+  color: #fff;
+  font-size: 1.1em;
+  border-radius: 10px;
+}
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 1000px;
+  object-fit: contain;
+  background: black;
+  overflow-y: scroll;
+}
+
+.profile-box {
+  position: fixed;
+  top: 50px;
+  width: 100vw;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.profile-box div {
+  margin: 10px 0;
+  color: #fff;
+  font-size: 1.2em;
+}
+.slider2 {
+  position: fixed;
+  top: 50px;
+  right: -50%;
+  padding: 10px;
+  width: 40%;
+  height: 300px;
+  border-bottom-left-radius: 10px;
+  background: #1a1515;
+  overflow: hidden;
+  transition: right 0.5s ease;
+  z-index: 9999;
+}
+.slider2.active {
+  right: 0;
+}
+.slider2 div {
+  color: #fff;
+  font-size: 1.2em;
+  padding: 10px;
+}
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: contain;
+  background: black;
+}
+.show {
+  position: fixed;
+  top: 50px;
+  width: 100vw;
+  height: 800px;
+  color: #fff;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  background: yellow;
+}
+input {
+  color: #fff;
+  width: 200px;
+  background: yellow;
+}
+
+p {
+  color: #fff;
+}
