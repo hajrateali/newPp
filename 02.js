@@ -47,11 +47,7 @@ let allimg = document.querySelector('.allimg');
 allimg.addEventListener('click', allimg1);
 function allimg1() {
   console.log("Function called");
-  fetch('https://api.github.com/repos/shamaali86055/PicAl/contents', {
-      headers: {
-        Authorization: `token ${token}`
-      }
-    })
+  fetch('https://api.github.com/repos/shamaali86055/PicAl/contents')
     .then(res => res.json())
     .then(dat1 => {
       console.log(dat1);
